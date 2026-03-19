@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  darkMode: ["class"],
+  darkMode: "class",
   content: [
     './pages/**/*.{js,jsx}',
     './components/**/*.{js,jsx}',
@@ -42,6 +42,13 @@ export default {
         accent: {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
+        },
+        lx: {
+          "bg-dark": "#020617",
+          "bg-light": "#F5F5F7",
+          "accent-purple": "#A855F7",
+          "accent-pink": "#EC4899",
+          "accent-indigo": "#6366F1",
         },
       },
       borderRadius: {

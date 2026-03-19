@@ -49,7 +49,7 @@ const Navbar = () => {
   const Logo = () => (
     <div className="flex items-center space-x-2">
       <img src="/logo1.png" alt="Logo" className="h-8 w-8" />
-      <span className="font-bold text-lg hidden sm:inline-block">ShikshaMudra</span>
+      <span className="font-bold text-lg hidden sm:inline-block">LetXchange</span>
     </div>
   );
 
@@ -95,7 +95,7 @@ const Navbar = () => {
           ) : (
             <div className="hidden md:flex items-center gap-2 text-sm font-medium text-muted-foreground animate-fade-in">
               <Sparkles className="h-4 w-4 text-primary" />
-              <span>BharatSkill Connect, Where Shishya find there DHRUNACHARAYA</span>
+              <span>Trade skills with people nearby — learn, teach, grow.</span>
             </div>
           )}
         </div>
@@ -103,7 +103,16 @@ const Navbar = () => {
         {/* Right Side */}
         <div className="flex-shrink-0 flex items-center space-x-2 sm:space-x-4">
           {/* Dark Mode Toggle */}
-          <Button variant="ghost" size="icon" onClick={toggleDarkMode} className="hover:scale-110 transition-transform duration-300">
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={toggleDarkMode}
+            className="
+              hover:scale-110 transition-transform duration-300
+              rounded-full
+              hover:bg-accent/60
+            "
+          >
             {darkMode ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
           </Button>
 

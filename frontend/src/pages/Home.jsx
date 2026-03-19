@@ -490,10 +490,10 @@ const Home = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-8"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-8 backdrop-blur-xl"
           >
             <Sparkles className="w-4 h-4" />
-            <span>India's #1 Skill Exchange Platform</span>
+            <span>LetXchange · Skill swaps made simple</span>
             <motion.div
               className="w-2 h-2 rounded-full bg-primary"
               animate={{ scale: [1, 1.5, 1] }}
@@ -516,7 +516,7 @@ const Home = () => {
               transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
               style={{ backgroundSize: "200% 100%" }}
             >
-              Learn from
+              Turn your skills
             </motion.span>
             <motion.span 
               className="block bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent"
@@ -526,7 +526,7 @@ const Home = () => {
               transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
               style={{ backgroundSize: "200% 100%" }}
             >
-              Local Gurus
+              into currency.
             </motion.span>
           </motion.h1>
 
@@ -537,7 +537,7 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            Discover extraordinary skills in your neighborhood. Connect with verified local experts and transform your learning journey.
+            Learn what you want, teach what you’re great at — and match with people nearby to exchange skills 1:1.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -553,10 +553,16 @@ const Home = () => {
             >
               <Button 
                 size="lg" 
-                className="px-8 py-6 text-lg font-semibold bg-gradient-to-r from-primary to-primary-glow hover:shadow-lg hover:shadow-primary/25 group"
+                className="px-8 py-6 text-lg font-semibold group border-0
+                  bg-lx-accent-purple text-white
+                  shadow-[0_14px_45px_rgba(168,85,247,0.30)]
+                  hover:shadow-[0_18px_60px_rgba(236,72,153,0.32)]
+                  dark:bg-gradient-to-r dark:from-fuchsia-500 dark:via-purple-500 dark:to-indigo-500
+                  dark:shadow-[0_18px_70px_rgba(168,85,247,0.55)]
+                "
                 onClick={() => navigate('/signup')}
               >
-                Start Learning Today
+                Start Your First Exchange
                 <motion.div
                   className="ml-2"
                   animate={{ x: [0, 5, 0] }}

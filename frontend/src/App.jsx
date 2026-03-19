@@ -36,7 +36,14 @@ function App() {
  
      return (
     <ThemeProvider>
-      <div className="flex flex-col min-h-screen bg-background font-sans antialiased">
+      <div
+        className="
+          flex flex-col min-h-screen font-sans antialiased
+          bg-lx-bg-light text-foreground
+          dark:bg-gradient-to-br dark:from-slate-950 dark:via-slate-900 dark:to-slate-950
+          transition-colors duration-300
+        "
+      >
         <Toaster position="top-center" reverseOrder={false} />
         <Navbar />
         {/* 👈 2. Yahaan se container classes hata dein */}

@@ -4,30 +4,63 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* ☀️ Light mode — soft off-white, clean purple accent */
+    --background: 240 6% 96%;
+    --foreground: 222 47% 11%;
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 222 47% 11%;
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-    --primary: 243.8 91.4% 58.2%;
+    --popover-foreground: 222 47% 11%;
+
+    /* Accent: softer purple, still on-brand */
+    --primary: 263 83% 58%;
     --primary-foreground: 0 0% 98%;
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 240 5% 92%;
+    --secondary-foreground: 222 47% 11%;
+    --muted: 240 5% 92%;
+    --muted-foreground: 215 16% 35%;
+
+    /* Used for subtle hovers */
+    --accent: 262 83% 95%;
+    --accent-foreground: 222 47% 11%;
+
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 243.8 91.4% 58.2%;
-    --radius: 0.5rem;
+    --border: 220 13% 90%;
+    --input: 220 13% 90%;
+    --ring: 263 83% 58%;
+    --radius: 0.75rem;
   }
 
   .dark {
-    /* Add dark mode colors if desired */
+    /* 🌙 Dark mode — deep navy, neon purple/pink accents */
+    --background: 222 84% 4%;
+    --foreground: 210 40% 98%;
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Neon-ish purple (works great with pink gradients in UI) */
+    --primary: 270 95% 70%;
+    --primary-foreground: 222 84% 4%;
+
+    --secondary: 223 47% 16%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 223 47% 16%;
+    --muted-foreground: 215 20% 75%;
+
+    /* Hover backgrounds */
+    --accent: 223 47% 16%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 215 28% 22%;
+    --input: 215 28% 22%;
+    --ring: 270 95% 70%;
+    --radius: 0.75rem;
   }
 }
 
@@ -44,26 +77,6 @@
 
 @layer base {
   .dark {
-    --background: 220 13% 18%;          /* dark main bg */
-    --foreground: 210 20% 96%;          /* main text */
-    --card: 220 13% 24%;                 /* card bg */
-    --card-foreground: 210 20% 96%;      /* card text */
-    --popover: 220 13% 28%;              /* dropdown/popover bg */
-    --popover-foreground: 210 20% 96%;   /* dropdown text */
-    --primary: 243.8 91.4% 58.2%;        /* accent color */
-    --primary-foreground: 0 0% 98%;      /* primary text */
-    --secondary: 210 40% 24%;            /* secondary items */
-    --secondary-foreground: 210 20% 96%;
-    --muted: 220 13% 36%;                /* muted cards / borders */
-    --muted-foreground: 210 20% 96%;
-    --accent: 210 40% 28%;               /* hover bg for buttons */
-    --accent-foreground: 210 20% 96%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 220 13% 36%;               /* subtle border */
-    --input: 220 13% 28%;                /* input background */
-    --ring: 243.8 91.4% 58.2%;           /* focus ring */
-    --shadow-color: 0 0% 0% / 0.5;       /* shadows slightly lighter */
-    --radius: 0.5rem;
+    /* (kept empty on purpose) */
   }
 }

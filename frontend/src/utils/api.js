@@ -2,7 +2,7 @@ import axios from 'axios';
 import useAuthStore from '@/store/authStore';
 
 const api = axios.create({
-  baseURL: 'https://shikshamudra.onrender.com/api',
+  baseURL: 'http://localhost:5000/api',
   withCredentials: true,  
 });
 

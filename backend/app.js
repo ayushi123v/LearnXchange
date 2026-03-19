@@ -18,7 +18,7 @@ const app = express();
 
 
 app.use(cors({
-  origin:'https://shiksha-mudraa.onrender.com',
+  origin: ['https://shiksha-mudraa.onrender.com', 'http://localhost:5173', 'http://localhost:5174'],
   credentials: true,
 }));
 app.use(helmet());

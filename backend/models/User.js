@@ -30,7 +30,7 @@ UserSchema.index({ location: '2dsphere' });
 
 UserSchema.pre('save', async function (next) {
   if (!this.isModified('password')) {
-    next();
+    return next(); // ← only this line changes
   }
   const salt = await bcrypt.genSalt(10);
   this.password = await bcrypt.hash(this.password, salt);

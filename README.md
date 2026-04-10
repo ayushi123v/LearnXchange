@@ -1,4 +1,4 @@
-# 🌐 ShikshaMudra – A Hyperlocal P2P Skill Exchange Platform  
+# 🌐 Letxchange – A Hyperlocal P2P Skill Exchange Platform  
 
 ![GitHub stars](https://img.shields.io/github/stars/JayP2006/Bharat-Skill-Exchange?style=social)  
 ![GitHub forks](https://img.shields.io/github/forks/JayP2006/Bharat-Skill-Exchange?style=social)  

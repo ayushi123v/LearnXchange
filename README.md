@@ -82,9 +82,4 @@
 
 ---
 
-## 🚀 Getting Started  
 
-### 1️⃣ Clone the Repo  
-```bash
-git clone https://github.com/JayP2006/Bharat-Skill-Exchange.git
-cd Bharat-Skill-Exchange
